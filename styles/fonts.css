@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'NR';
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NI';
+    src: url(../fonts/Nunito-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'NSB';
+    src: url(../fonts/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'NB';
+    src: url(../fonts/Nunito-Bold.ttf);
+}
