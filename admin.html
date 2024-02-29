@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/admin.css">
     <script src="scripts/script.js"></script>
-    <script src="scripts/db.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,12 +16,12 @@
 
     <main>
         <div id="auth">
-            <form action="scripts/login.php" method="post">
+            <form action="login.php" method="post">
                 <label for="login">Введите логин аккаунта</label> <br> <br>
-                <input type="text" id="login"> <br> <br>
+                <input type="text" name="login" required> <br> <br>
                 <label for="password">Введите пароль аккаунта</label> <br> <br>
-                <input type="text" id="password"> <br> <br>
-                <h4 id="oh" style="display: none;">Неверный логин или пароль</h4>
+                <input type="text" name="password" required> <br> <br>
+                <h4 id="oh" style="display: none;">Неверный логин или пароль</h4> <br>
                 <button type="submit">Войти</button>
             </form>
         </div>

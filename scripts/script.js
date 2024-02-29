@@ -1,3 +1,14 @@
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const valid = urlParams.get('valid');
+    
+    if (valid === 'false') {
+        invalid();
+        
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+};
+
 function openChangeIndex() {
     document.getElementById('div_inp').style.display = 'block';
     document.getElementById('buttons').style.display = 'none';
@@ -8,21 +19,8 @@ function main_menu() {
     document.getElementById('buttons').style.display = 'block';
 }
 
-function changeIndex() {
-    let important_val = document.getElementById('important');
-
-    fetch('../index.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('imp').innerHTML = important_val.value;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-}
-
 function invalid() {
-    document.getElementById('oh').style.display = 'flex';
+    document.getElementById('oh').style.display = 'block';
 }
 
 function valid() {

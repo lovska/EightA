@@ -123,6 +123,31 @@ hr {
     border-radius: 25px;
 }
 
+#auth {
+    margin-top: 12svh;
+    text-align: center;
+}
+
+#auth input {
+    width: 175px;
+    padding: 1%;
+    border: 0;
+    border-radius: 25px;
+    background: #6286d1;
+    color: #fff;
+}
+
+#auth button {
+    width: 125px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #5675b8;
+    padding: 1%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .inputs button:hover {
     cursor: pointer;
     background-color: #5675b8;
