@@ -19,10 +19,15 @@ header {
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
 }
+
+main {
+    margin-bottom: 25%;
+}
+
 footer {
     background-color: #8DAFE2;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;

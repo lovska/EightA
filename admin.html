@@ -16,12 +16,12 @@
 
     <main>
         <div id="buttons">
-            <button onclick="openChangeIndex()">Открыть панель изменений</button>
+            <button onclick="openChangeIndex()">Открыть панель изменений</button> <br> <br>
             <button>Открыть редактирование пользователей</button>
         </div>
         
         <div class="inputs" id="div_inp" style="display: none;">
-            <form action="">
+            <form onsubmit="changeIndex()">
                 <label for="important"><b>Изменить 'Важное на сегодня'</b></label> <br>
                 <input type="text" id="important" required placeholder="Введите текст для изменения">
                 <button type="submit">Подтвердить изменения</button> <br> <br>
@@ -38,10 +38,8 @@
                 <input type="text" id="events" required placeholder="Введите текст для изменения">
                 <button type="submit">Подтвердить изменения</button>
             </form>
-            
 
-
-            
+            <button onclick="main_menu()">Вернуться к панели выбора</button>
         </div>
     </main>
 
