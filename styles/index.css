@@ -36,6 +36,10 @@ header {
     border-bottom-right-radius: 20%;
 }
 
+main {
+    margin-bottom: 25%;
+}
+
 footer {
     position: fixed;
     background-color: #8DAFE2;

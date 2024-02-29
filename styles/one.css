@@ -20,6 +20,10 @@ header {
     border-bottom-right-radius: 20%;
 }
 
+main {
+    margin-bottom: 25%;
+}
+
 footer {
     background-color: #8DAFE2;
     height: 50px;
