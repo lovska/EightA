@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/admin.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/db.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,18 @@
     </header>
 
     <main>
-        <div id="buttons">
+        <div id="auth">
+            <form action="scripts/login.php" method="post">
+                <label for="login">Введите логин аккаунта</label> <br> <br>
+                <input type="text" id="login"> <br> <br>
+                <label for="password">Введите пароль аккаунта</label> <br> <br>
+                <input type="text" id="password"> <br> <br>
+                <h4 id="oh" style="display: none;">Неверный логин или пароль</h4>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+
+        <div id="buttons" style="display: none;">
             <button onclick="openChangeIndex()">Открыть панель изменений</button> <br> <br>
             <button>Открыть редактирование пользователей</button>
         </div>
@@ -39,7 +51,7 @@
                 <button type="submit">Подтвердить изменения</button>
             </form>
 
-            <button onclick="main_menu()">Вернуться к панели выбора</button>
+            <button onclick="main_menu()" id="but_return">Вернуться к панели выбора</button>
         </div>
     </main>
 

@@ -20,3 +20,13 @@ function changeIndex() {
         console.error('Error:', error);
     });
 }
+
+function invalid() {
+    document.getElementById('oh').style.display = 'flex';
+}
+
+function valid() {
+    document.getElementById('oh').style.display = 'none';
+    document.getElementById('auth').style.display = 'none';
+    document.getElementById('buttons').style.display = 'block';
+}
